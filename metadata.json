@@ -1,0 +1,5 @@
+{
+  "name": "RAG Sports Agent Chat",
+  "description": "An AI chat application that simulates the setup of a Retrieval-Augmented Generation (RAG) pipeline with a sports dataset, and then provides a chat interface to interact with the knowledgeable AI agent.",
+  "requestFramePermissions": []
+}

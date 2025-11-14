@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BallKnowledgeAI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* For custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #111;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #555;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #777;
+      }
+
+      /* New Gradient Button Style */
+      .gradient-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: inherit;
+        cursor: pointer;
+        font-weight: 500;
+        font-size: 17px;
+        padding: 0.8em 1.3em 0.8em 0.9em;
+        color: white;
+        background: #ad5389;
+        background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+        border: none;
+        letter-spacing: 0.05em;
+        border-radius: 16px;
+        transition: all 0.3s;
+      }
+
+      .gradient-button:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+      }
+
+      .gradient-button svg {
+        margin-right: 8px;
+        height: 1.2em;
+        width: 1.2em;
+        transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+      }
+
+      .gradient-button span {
+        transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+      }
+
+      .gradient-button:hover:not(:disabled) {
+        box-shadow: 0 0 10px rgba(78, 70, 148, 0.8);
+      }
+
+      .gradient-button:hover:not(:disabled) svg {
+        transform: translateX(5px);
+      }
+
+      .gradient-button:hover:not(:disabled) span {
+        transform: translateX(7px);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.29.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-black text-white">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
